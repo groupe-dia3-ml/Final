@@ -1,0 +1,510 @@
+{
+  "frozen_at_utc": "2026-11-16T12:19:15.085937+00:00",
+  "seed": 42,
+  "primary_selection_metric": "mean five-fold development average precision",
+  "primary_candidate": "enriched/gradient_boosting_leaf15",
+  "threshold_rule": "maximize development OOF F1; majority uses 0.5",
+  "candidate_count": 28,
+  "finalists": {
+    "enriched/gradient_boosting_leaf15": {
+      "threshold": 0.23160429527449541,
+      "features": [
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "Smoker",
+        "HvyAlcoholConsump",
+        "Sex",
+        "Age",
+        "Education",
+        "Income",
+        "BMI",
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "Stroke",
+        "HeartDiseaseorAttack",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "AnyHealthcare",
+        "NoDocbcCost"
+      ],
+      "parameters": {
+        "memory": null,
+        "steps": [
+          [
+            "clf",
+            "HistGradientBoostingClassifier(early_stopping=False, l2_regularization=1.0,\n                               learning_rate=0.08, max_iter=150,\n                               max_leaf_nodes=15, random_state=42)"
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "clf": "HistGradientBoostingClassifier(early_stopping=False, l2_regularization=1.0,\n                               learning_rate=0.08, max_iter=150,\n                               max_leaf_nodes=15, random_state=42)",
+        "clf__categorical_features": "from_dtype",
+        "clf__class_weight": null,
+        "clf__early_stopping": false,
+        "clf__interaction_cst": null,
+        "clf__l2_regularization": 1.0,
+        "clf__learning_rate": 0.08,
+        "clf__loss": "log_loss",
+        "clf__max_bins": 255,
+        "clf__max_depth": null,
+        "clf__max_features": 1.0,
+        "clf__max_iter": 150,
+        "clf__max_leaf_nodes": 15,
+        "clf__min_samples_leaf": 20,
+        "clf__monotonic_cst": null,
+        "clf__n_iter_no_change": 10,
+        "clf__random_state": 42,
+        "clf__scoring": "loss",
+        "clf__tol": 1e-07,
+        "clf__validation_fraction": 0.1,
+        "clf__verbose": 0,
+        "clf__warm_start": false
+      }
+    },
+    "enriched/l1_C0.01": {
+      "threshold": 0.20947152049319,
+      "features": [
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "Smoker",
+        "HvyAlcoholConsump",
+        "Sex",
+        "Age",
+        "Education",
+        "Income",
+        "BMI",
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "Stroke",
+        "HeartDiseaseorAttack",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "AnyHealthcare",
+        "NoDocbcCost"
+      ],
+      "parameters": {
+        "memory": null,
+        "steps": [
+          [
+            "scale",
+            "StandardScaler()"
+          ],
+          [
+            "select",
+            "SelectFromModel(estimator=LogisticRegression(C=0.01, l1_ratio=1, max_iter=2000,\n                                             random_state=42,\n                                             solver='liblinear'))"
+          ],
+          [
+            "clf",
+            "LogisticRegression(max_iter=2000, random_state=42)"
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "scale": "StandardScaler()",
+        "select": "SelectFromModel(estimator=LogisticRegression(C=0.01, l1_ratio=1, max_iter=2000,\n                                             random_state=42,\n                                             solver='liblinear'))",
+        "clf": "LogisticRegression(max_iter=2000, random_state=42)",
+        "scale__copy": true,
+        "scale__with_mean": true,
+        "scale__with_std": true,
+        "select__estimator__C": 0.01,
+        "select__estimator__class_weight": null,
+        "select__estimator__dual": false,
+        "select__estimator__fit_intercept": true,
+        "select__estimator__intercept_scaling": 1,
+        "select__estimator__l1_ratio": 1,
+        "select__estimator__max_iter": 2000,
+        "select__estimator__n_jobs": null,
+        "select__estimator__penalty": "deprecated",
+        "select__estimator__random_state": 42,
+        "select__estimator__solver": "liblinear",
+        "select__estimator__tol": 0.0001,
+        "select__estimator__verbose": 0,
+        "select__estimator__warm_start": false,
+        "select__estimator": "LogisticRegression(C=0.01, l1_ratio=1, max_iter=2000, random_state=42,\n                   solver='liblinear')",
+        "select__importance_getter": "auto",
+        "select__max_features": null,
+        "select__norm_order": 1,
+        "select__prefit": false,
+        "select__threshold": null,
+        "clf__C": 1.0,
+        "clf__class_weight": null,
+        "clf__dual": false,
+        "clf__fit_intercept": true,
+        "clf__intercept_scaling": 1,
+        "clf__l1_ratio": 0.0,
+        "clf__max_iter": 2000,
+        "clf__n_jobs": null,
+        "clf__penalty": "deprecated",
+        "clf__random_state": 42,
+        "clf__solver": "lbfgs",
+        "clf__tol": 0.0001,
+        "clf__verbose": 0,
+        "clf__warm_start": false
+      }
+    },
+    "enriched/logistic_C1": {
+      "threshold": 0.21255794345442158,
+      "features": [
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "Smoker",
+        "HvyAlcoholConsump",
+        "Sex",
+        "Age",
+        "Education",
+        "Income",
+        "BMI",
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "Stroke",
+        "HeartDiseaseorAttack",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "AnyHealthcare",
+        "NoDocbcCost"
+      ],
+      "parameters": {
+        "memory": null,
+        "steps": [
+          [
+            "scale",
+            "StandardScaler()"
+          ],
+          [
+            "clf",
+            "LogisticRegression(max_iter=2000, random_state=42)"
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "scale": "StandardScaler()",
+        "clf": "LogisticRegression(max_iter=2000, random_state=42)",
+        "scale__copy": true,
+        "scale__with_mean": true,
+        "scale__with_std": true,
+        "clf__C": 1.0,
+        "clf__class_weight": null,
+        "clf__dual": false,
+        "clf__fit_intercept": true,
+        "clf__intercept_scaling": 1,
+        "clf__l1_ratio": 0.0,
+        "clf__max_iter": 2000,
+        "clf__n_jobs": null,
+        "clf__penalty": "deprecated",
+        "clf__random_state": 42,
+        "clf__solver": "lbfgs",
+        "clf__tol": 0.0001,
+        "clf__verbose": 0,
+        "clf__warm_start": false
+      }
+    },
+    "enriched/majority": {
+      "threshold": 0.5,
+      "features": [
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "Smoker",
+        "HvyAlcoholConsump",
+        "Sex",
+        "Age",
+        "Education",
+        "Income",
+        "BMI",
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "Stroke",
+        "HeartDiseaseorAttack",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "AnyHealthcare",
+        "NoDocbcCost"
+      ],
+      "parameters": {
+        "memory": null,
+        "steps": [
+          [
+            "clf",
+            "DummyClassifier(strategy='most_frequent')"
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "clf": "DummyClassifier(strategy='most_frequent')",
+        "clf__constant": null,
+        "clf__random_state": null,
+        "clf__strategy": "most_frequent"
+      }
+    },
+    "enriched/mi_k10": {
+      "threshold": 0.20926100820600807,
+      "features": [
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "Smoker",
+        "HvyAlcoholConsump",
+        "Sex",
+        "Age",
+        "Education",
+        "Income",
+        "BMI",
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "Stroke",
+        "HeartDiseaseorAttack",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "AnyHealthcare",
+        "NoDocbcCost"
+      ],
+      "parameters": {
+        "memory": null,
+        "steps": [
+          [
+            "select",
+            "SelectKBest(score_func=functools.partial(<function mutual_info_classif at 0x112f68880>, discrete_features=True, random_state=42))"
+          ],
+          [
+            "scale",
+            "StandardScaler()"
+          ],
+          [
+            "clf",
+            "LogisticRegression(max_iter=2000, random_state=42)"
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "select": "SelectKBest(score_func=functools.partial(<function mutual_info_classif at 0x112f68880>, discrete_features=True, random_state=42))",
+        "scale": "StandardScaler()",
+        "clf": "LogisticRegression(max_iter=2000, random_state=42)",
+        "select__k": 10,
+        "select__score_func": "functools.partial(<function mutual_info_classif at 0x112f68880>, discrete_features=True, random_state=42)",
+        "scale__copy": true,
+        "scale__with_mean": true,
+        "scale__with_std": true,
+        "clf__C": 1.0,
+        "clf__class_weight": null,
+        "clf__dual": false,
+        "clf__fit_intercept": true,
+        "clf__intercept_scaling": 1,
+        "clf__l1_ratio": 0.0,
+        "clf__max_iter": 2000,
+        "clf__n_jobs": null,
+        "clf__penalty": "deprecated",
+        "clf__random_state": 42,
+        "clf__solver": "lbfgs",
+        "clf__tol": 0.0001,
+        "clf__verbose": 0,
+        "clf__warm_start": false
+      }
+    },
+    "enriched/rfe_k10": {
+      "threshold": 0.21249495105514735,
+      "features": [
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "Smoker",
+        "HvyAlcoholConsump",
+        "Sex",
+        "Age",
+        "Education",
+        "Income",
+        "BMI",
+        "HighBP",
+        "HighChol",
+        "CholCheck",
+        "Stroke",
+        "HeartDiseaseorAttack",
+        "GenHlth",
+        "MentHlth",
+        "PhysHlth",
+        "DiffWalk",
+        "AnyHealthcare",
+        "NoDocbcCost"
+      ],
+      "parameters": {
+        "memory": null,
+        "steps": [
+          [
+            "scale",
+            "StandardScaler()"
+          ],
+          [
+            "select",
+            "RFE(estimator=LogisticRegression(max_iter=2000, random_state=42),\n    n_features_to_select=10, step=4)"
+          ],
+          [
+            "clf",
+            "LogisticRegression(max_iter=2000, random_state=42)"
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "scale": "StandardScaler()",
+        "select": "RFE(estimator=LogisticRegression(max_iter=2000, random_state=42),\n    n_features_to_select=10, step=4)",
+        "clf": "LogisticRegression(max_iter=2000, random_state=42)",
+        "scale__copy": true,
+        "scale__with_mean": true,
+        "scale__with_std": true,
+        "select__estimator__C": 1.0,
+        "select__estimator__class_weight": null,
+        "select__estimator__dual": false,
+        "select__estimator__fit_intercept": true,
+        "select__estimator__intercept_scaling": 1,
+        "select__estimator__l1_ratio": 0.0,
+        "select__estimator__max_iter": 2000,
+        "select__estimator__n_jobs": null,
+        "select__estimator__penalty": "deprecated",
+        "select__estimator__random_state": 42,
+        "select__estimator__solver": "lbfgs",
+        "select__estimator__tol": 0.0001,
+        "select__estimator__verbose": 0,
+        "select__estimator__warm_start": false,
+        "select__estimator": "LogisticRegression(max_iter=2000, random_state=42)",
+        "select__importance_getter": "auto",
+        "select__n_features_to_select": 10,
+        "select__step": 4,
+        "select__verbose": 0,
+        "clf__C": 1.0,
+        "clf__class_weight": null,
+        "clf__dual": false,
+        "clf__fit_intercept": true,
+        "clf__intercept_scaling": 1,
+        "clf__l1_ratio": 0.0,
+        "clf__max_iter": 2000,
+        "clf__n_jobs": null,
+        "clf__penalty": "deprecated",
+        "clf__random_state": 42,
+        "clf__solver": "lbfgs",
+        "clf__tol": 0.0001,
+        "clf__verbose": 0,
+        "clf__warm_start": false
+      }
+    },
+    "lifestyle/gradient_boosting_leaf15": {
+      "threshold": 0.17988905947343647,
+      "features": [
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "Smoker",
+        "HvyAlcoholConsump",
+        "Sex",
+        "Age",
+        "Education",
+        "Income"
+      ],
+      "parameters": {
+        "memory": null,
+        "steps": [
+          [
+            "clf",
+            "HistGradientBoostingClassifier(early_stopping=False, l2_regularization=1.0,\n                               learning_rate=0.08, max_iter=150,\n                               max_leaf_nodes=15, random_state=42)"
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "clf": "HistGradientBoostingClassifier(early_stopping=False, l2_regularization=1.0,\n                               learning_rate=0.08, max_iter=150,\n                               max_leaf_nodes=15, random_state=42)",
+        "clf__categorical_features": "from_dtype",
+        "clf__class_weight": null,
+        "clf__early_stopping": false,
+        "clf__interaction_cst": null,
+        "clf__l2_regularization": 1.0,
+        "clf__learning_rate": 0.08,
+        "clf__loss": "log_loss",
+        "clf__max_bins": 255,
+        "clf__max_depth": null,
+        "clf__max_features": 1.0,
+        "clf__max_iter": 150,
+        "clf__max_leaf_nodes": 15,
+        "clf__min_samples_leaf": 20,
+        "clf__monotonic_cst": null,
+        "clf__n_iter_no_change": 10,
+        "clf__random_state": 42,
+        "clf__scoring": "loss",
+        "clf__tol": 1e-07,
+        "clf__validation_fraction": 0.1,
+        "clf__verbose": 0,
+        "clf__warm_start": false
+      }
+    },
+    "lifestyle/logistic_C1": {
+      "threshold": 0.14830928508786428,
+      "features": [
+        "PhysActivity",
+        "Fruits",
+        "Veggies",
+        "Smoker",
+        "HvyAlcoholConsump",
+        "Sex",
+        "Age",
+        "Education",
+        "Income"
+      ],
+      "parameters": {
+        "memory": null,
+        "steps": [
+          [
+            "scale",
+            "StandardScaler()"
+          ],
+          [
+            "clf",
+            "LogisticRegression(max_iter=2000, random_state=42)"
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "scale": "StandardScaler()",
+        "clf": "LogisticRegression(max_iter=2000, random_state=42)",
+        "scale__copy": true,
+        "scale__with_mean": true,
+        "scale__with_std": true,
+        "clf__C": 1.0,
+        "clf__class_weight": null,
+        "clf__dual": false,
+        "clf__fit_intercept": true,
+        "clf__intercept_scaling": 1,
+        "clf__l1_ratio": 0.0,
+        "clf__max_iter": 2000,
+        "clf__n_jobs": null,
+        "clf__penalty": "deprecated",
+        "clf__random_state": 42,
+        "clf__solver": "lbfgs",
+        "clf__tol": 0.0001,
+        "clf__verbose": 0,
+        "clf__warm_start": false
+      }
+    }
+  },
+  "source_sha256": {
+    "__init__.py": "3ff3aab76fde5460df9c9cc89b5c8ebca442ac313a9efb38a2cbcf7b200fca85",
+    "data_loader.py": "0f75c663a82154584dd14ae24d3252efb87bde49d4ce699ccc9a5d947877d675",
+    "evaluate.py": "c8c2375a2b1f341a991dc5de956105cdb51968cbdf4d6a3f04449c00f2c5cd69",
+    "experiment.py": "3df0cef75bef5c17bd43521507c1cf6b02818dd51df3f2a31581eb4ae888e0ee",
+    "models.py": "246dc66bd7cd500b830536db037f69cf1dfd48be436a0801df9870221ffa362b",
+    "preprocessing.py": "c5d995aa8862c662f2dbbc5587233a41c07ba9fccc248899b86592ccca8efda8"
+  },
+  "cv_caveat": "Selection uses the same CV scores; they are optimistic, not nested estimates."
+}

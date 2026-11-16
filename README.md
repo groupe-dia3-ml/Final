@@ -6,8 +6,18 @@ This project studies how lifestyle habits, demographics and self-reported health
 indicators help classify diabetes status. It compares simple, reproducible models
 and investigates whether feature selection preserves predictive performance.
 
-**Status:** project definition. Model implementation and experimental results are
-not available yet. All project deliverables and presentations are in English.
+**Status:** both experimental phases are implemented and executed on the
+`feature/complete-project` working branches. All deliverables are in English.
+
+Read the [final report](reports/FINAL_REPORT.md), [PDF version](output/pdf/FINAL_REPORT.pdf), [oral defense notes](reports/ORAL_DEFENSE.md)
+and [saved evidence](reports/evidence). The companion repositories are
+[CDC benchmark](https://github.com/groupe-dia3-ml/cdc-benchmark) and
+[synthetic study](https://github.com/groupe-dia3-ml/synthetic-data).
+
+The selected CDC model reaches held-out AP **0.4247** and ROC-AUC **0.8274**;
+the lifestyle comparator reaches AP **0.2763**. The synthetic study covers twelve
+scenarios and three 50,000-row cohorts. The report distinguishes observed results
+from the original project plan below.
 
 ## Research question
 
@@ -153,15 +163,28 @@ positive rate and precision.
 | 3 | Compare models, feature sets and selection methods | Cross-validation comparison and error analysis |
 | 4 | Freeze configurations, evaluate on test data and discuss limitations | Final notebook/code, report and presentation |
 
-Team members and individual task ownership will be recorded before implementation;
-no allocation is assumed in this initial specification.
+The table above preserves the original work plan. Individual task ownership must
+be completed by the group; no unverified allocation or contribution is claimed.
 
 ## Reproducibility and current repository status
 
-This repository currently contains the project specification only. There are no
-training commands, dependency files, tests or model results yet. Implementation
-will add a documented environment, data acquisition, executable experiments and
-verification commands. All randomness and library versions will be recorded.
+This repository contains the original specification, the completed final report,
+oral defense notes and a hashed snapshot of experimental evidence. Each companion
+repository contains source code, pinned dependencies, tests, saved results and an
+executed notebook. Use Python 3.14; installation and checks are in each README.
+
+From either companion repository, run:
+
+```sh
+python -m pip install -r requirements-dev.txt
+MPLBACKEND=Agg python -m src.experiment
+python scripts/execute_notebook.py
+```
+
+The first phase verifies the exact UCI checksum; the synthetic phase needs no
+external data. Source fingerprints, seeds, versions, split definitions and frozen
+selection decisions accompany the results. The notebook defaults to displaying
+verified saved results; `RERUN_EXPERIMENTS=1` recomputes them.
 
 Contributions use a branch and a pull request targeting `main`. Experimental
 claims must be backed by saved outputs from reproducible runs.
@@ -182,3 +205,16 @@ CDC Diabetes Health Indicators [Dataset]. (2017). UCI Machine Learning Repositor
 The year above follows the UCI citation and is not a claim about the survey year.
 UCI directs users to the original dataset for usage terms and acknowledgements;
 those terms must be retained when sharing derived data or results.
+
+## Export the report as PDF
+
+The PDF includes all report text, tables, references and the three experiment
+figures, with landscape pages for the figures. To regenerate it from Markdown:
+
+```sh
+python -m pip install -r requirements-export.txt
+python scripts/export_report.py
+```
+
+Output: `output/pdf/FINAL_REPORT.pdf`. The exporter embeds its font and preserves
+external reference links. Check the regenerated pages visually after content edits.

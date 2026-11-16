@@ -1,0 +1,23 @@
+{
+  "completed_at_utc": "2026-11-16T12:19:23.460770+00:00",
+  "elapsed_seconds": 70.05561829198268,
+  "python": "3.14.10",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.1"
+  },
+  "source_sha256": {
+    "__init__.py": "3ff3aab76fde5460df9c9cc89b5c8ebca442ac313a9efb38a2cbcf7b200fca85",
+    "data_loader.py": "0f75c663a82154584dd14ae24d3252efb87bde49d4ce699ccc9a5d947877d675",
+    "evaluate.py": "c8c2375a2b1f341a991dc5de956105cdb51968cbdf4d6a3f04449c00f2c5cd69",
+    "experiment.py": "3df0cef75bef5c17bd43521507c1cf6b02818dd51df3f2a31581eb4ae888e0ee",
+    "models.py": "246dc66bd7cd500b830536db037f69cf1dfd48be436a0801df9870221ffa362b",
+    "preprocessing.py": "c5d995aa8862c662f2dbbc5587233a41c07ba9fccc248899b86592ccca8efda8"
+  },
+  "data_sha256": "9f71fda9d4ae5f4878c99b9233b6a16accfa9a17c194116a6b78100540934964",
+  "seed": 42,
+  "primary_candidate": "enriched/gradient_boosting_leaf15",
+  "test_threshold": 0.23160429527449541
+}

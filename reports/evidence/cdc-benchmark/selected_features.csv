@@ -1,0 +1,9 @@
+candidate,feature_count,features
+enriched/gradient_boosting_leaf15,21,"PhysActivity,Fruits,Veggies,Smoker,HvyAlcoholConsump,Sex,Age,Education,Income,BMI,HighBP,HighChol,CholCheck,Stroke,HeartDiseaseorAttack,GenHlth,MentHlth,PhysHlth,DiffWalk,AnyHealthcare,NoDocbcCost"
+enriched/l1_C0.01,20,"PhysActivity,Fruits,Veggies,HvyAlcoholConsump,Sex,Age,Education,Income,BMI,HighBP,HighChol,CholCheck,Stroke,HeartDiseaseorAttack,GenHlth,MentHlth,PhysHlth,DiffWalk,AnyHealthcare,NoDocbcCost"
+enriched/logistic_C1,21,"PhysActivity,Fruits,Veggies,Smoker,HvyAlcoholConsump,Sex,Age,Education,Income,BMI,HighBP,HighChol,CholCheck,Stroke,HeartDiseaseorAttack,GenHlth,MentHlth,PhysHlth,DiffWalk,AnyHealthcare,NoDocbcCost"
+enriched/majority,21,"PhysActivity,Fruits,Veggies,Smoker,HvyAlcoholConsump,Sex,Age,Education,Income,BMI,HighBP,HighChol,CholCheck,Stroke,HeartDiseaseorAttack,GenHlth,MentHlth,PhysHlth,DiffWalk,AnyHealthcare,NoDocbcCost"
+enriched/mi_k10,10,"Age,Education,Income,BMI,HighBP,HighChol,HeartDiseaseorAttack,GenHlth,PhysHlth,DiffWalk"
+enriched/rfe_k10,10,"HvyAlcoholConsump,Sex,Age,Income,BMI,HighBP,HighChol,CholCheck,HeartDiseaseorAttack,GenHlth"
+lifestyle/gradient_boosting_leaf15,9,"PhysActivity,Fruits,Veggies,Smoker,HvyAlcoholConsump,Sex,Age,Education,Income"
+lifestyle/logistic_C1,9,"PhysActivity,Fruits,Veggies,Smoker,HvyAlcoholConsump,Sex,Age,Education,Income"

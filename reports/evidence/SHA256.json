@@ -1,0 +1,18 @@
+{
+  "cdc-benchmark/run_manifest.json": "07a590475a2888b4bb5b75bdc995a7b0898665b4cc47add05641d3085bee5c3d",
+  "cdc-benchmark/frozen_protocol.json": "91d4b123294f9bb502f0b83f047410f2269aa8df09962cef666e8d7308605b21",
+  "cdc-benchmark/data_audit.json": "e87cddfe3e447a5d25ad493af64f512607aa979187312743dc608aa3f06f3ae3",
+  "cdc-benchmark/cv_summary.csv": "b779aa50c9543ee639755eca1522ecdf800dfbaa2a757a30a46f1995daf915ab",
+  "cdc-benchmark/test_metrics.csv": "271af42fdfcadbff8248a2d196fe914756625554d0bfbe039fb9fbbe8c793dcd",
+  "cdc-benchmark/test_intervals.json": "2942ed8b75c22ac7c5829652c00c9aa9cf75c44dab63957794bd9261c1044bc5",
+  "cdc-benchmark/subgroup_metrics.csv": "d76f4190580872828803b0913713ca67195bf2aca81bd5d392059e22006d2263",
+  "cdc-benchmark/selected_features.csv": "1b4db6824dd06f588d97732fb1d549d6cd690ce22ecf8e92690683751eb512e6",
+  "cdc-benchmark/profile_overlap.json": "2f18817b2a4ee486c444b56229127878c11840e8b4d4dd1f3b3096fb5f05c64c",
+  "synthetic-data/run_manifest.json": "2bb2ceaa2a69efddfd3373bdfac2d9e91368dd0e71cae1dd92bbc51dce761fdd",
+  "synthetic-data/summary.csv": "21ba33636240585f27e8679fa010777dd4d5353c6a8868565c8e1170f0f5d0e1",
+  "synthetic-data/recovery.csv": "11dd4525cf481d1067697047401ab77da07a1f7b1d7e83d6ca0c40837b8e14e2",
+  "synthetic-data/cohort_audit.csv": "4b7aa20531ecbcb93e8318570a6be857c66f7bac75a0ebd448c16332b6eb53c8",
+  "synthetic-data/frozen_seed42.json": "ae3e0978898186034082f163ac4f6be1d31fce708bc9813f1238947f5c9086b7",
+  "synthetic-data/frozen_seed43.json": "24eaf7e6739cbd7498d481410a45870896e0bdefd59feb8d3e8e36765f2a64f1",
+  "synthetic-data/frozen_seed44.json": "4346776f3b77af99a8c89deae610269d193d6aa808412896fe1854e1740fc846"
+}

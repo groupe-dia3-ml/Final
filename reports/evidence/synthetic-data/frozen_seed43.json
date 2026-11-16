@@ -1,0 +1,386 @@
+{
+  "frozen_at_utc": "2026-11-16T12:21:22.080922+00:00",
+  "seed": 43,
+  "scenario_protocol": [
+    {
+      "name": "clean",
+      "family": "clean",
+      "level": 0.0,
+      "measurement": 0.0,
+      "labels": 0.0,
+      "noise": 0
+    },
+    {
+      "name": "measurement_0.05",
+      "family": "measurement",
+      "level": 0.05,
+      "measurement": 0.05,
+      "labels": 0.0,
+      "noise": 0
+    },
+    {
+      "name": "measurement_0.10",
+      "family": "measurement",
+      "level": 0.1,
+      "measurement": 0.1,
+      "labels": 0.0,
+      "noise": 0
+    },
+    {
+      "name": "measurement_0.20",
+      "family": "measurement",
+      "level": 0.2,
+      "measurement": 0.2,
+      "labels": 0.0,
+      "noise": 0
+    },
+    {
+      "name": "questions_10",
+      "family": "questions",
+      "level": 10.0,
+      "measurement": 0.0,
+      "labels": 0.0,
+      "noise": 10
+    },
+    {
+      "name": "questions_20",
+      "family": "questions",
+      "level": 20.0,
+      "measurement": 0.0,
+      "labels": 0.0,
+      "noise": 20
+    },
+    {
+      "name": "labels_0.05",
+      "family": "labels",
+      "level": 0.05,
+      "measurement": 0.0,
+      "labels": 0.05,
+      "noise": 0
+    },
+    {
+      "name": "labels_0.10",
+      "family": "labels",
+      "level": 0.1,
+      "measurement": 0.0,
+      "labels": 0.1,
+      "noise": 0
+    },
+    {
+      "name": "labels_0.20",
+      "family": "labels",
+      "level": 0.2,
+      "measurement": 0.0,
+      "labels": 0.2,
+      "noise": 0
+    },
+    {
+      "name": "combined_0.05",
+      "family": "combined",
+      "level": 0.05,
+      "measurement": 0.05,
+      "labels": 0.05,
+      "noise": 10
+    },
+    {
+      "name": "combined_0.10",
+      "family": "combined",
+      "level": 0.1,
+      "measurement": 0.1,
+      "labels": 0.1,
+      "noise": 10
+    },
+    {
+      "name": "combined_0.20",
+      "family": "combined",
+      "level": 0.2,
+      "measurement": 0.2,
+      "labels": 0.2,
+      "noise": 10
+    }
+  ],
+  "selections": {
+    "clean": [
+      {
+        "model": "logistic_unpenalized",
+        "family": "logistic",
+        "cv_ap_mean": 0.4550091583398072,
+        "cv_ap_sd": 0.01262822140547568,
+        "fit_seconds": 0.02982212498318404
+      },
+      {
+        "model": "l1_C0.1",
+        "family": "l1",
+        "cv_ap_mean": 0.4550714716541722,
+        "cv_ap_sd": 0.012546805505104208,
+        "fit_seconds": 0.08858154303743504
+      },
+      {
+        "model": "tree_depth5",
+        "family": "tree",
+        "cv_ap_mean": 0.40999731983691967,
+        "cv_ap_sd": 0.006805910818103973,
+        "fit_seconds": 0.0875440419476945
+      }
+    ],
+    "measurement_0.05": [
+      {
+        "model": "logistic_unpenalized",
+        "family": "logistic",
+        "cv_ap_mean": 0.455315193687625,
+        "cv_ap_sd": 0.012881276597552317,
+        "fit_seconds": 0.02962620701873675
+      },
+      {
+        "model": "l1_C0.1",
+        "family": "l1",
+        "cv_ap_mean": 0.4554060727000161,
+        "cv_ap_sd": 0.012723840012389666,
+        "fit_seconds": 0.0882811670016963
+      },
+      {
+        "model": "tree_depth5",
+        "family": "tree",
+        "cv_ap_mean": 0.4097193017189684,
+        "cv_ap_sd": 0.013360410567576494,
+        "fit_seconds": 0.07723287597764283
+      }
+    ],
+    "measurement_0.10": [
+      {
+        "model": "logistic_unpenalized",
+        "family": "logistic",
+        "cv_ap_mean": 0.4549579156288571,
+        "cv_ap_sd": 0.012486516071712512,
+        "fit_seconds": 0.029455918032908812
+      },
+      {
+        "model": "l1_C0.1",
+        "family": "l1",
+        "cv_ap_mean": 0.4549632641892341,
+        "cv_ap_sd": 0.012476779388648501,
+        "fit_seconds": 0.0878277920128312
+      },
+      {
+        "model": "tree_depth5",
+        "family": "tree",
+        "cv_ap_mean": 0.4062038944931191,
+        "cv_ap_sd": 0.008941089232140485,
+        "fit_seconds": 0.07739204095560126
+      }
+    ],
+    "measurement_0.20": [
+      {
+        "model": "logistic_unpenalized",
+        "family": "logistic",
+        "cv_ap_mean": 0.45412965480340234,
+        "cv_ap_sd": 0.012782828736109928,
+        "fit_seconds": 0.028682000993285328
+      },
+      {
+        "model": "l1_C0.1",
+        "family": "l1",
+        "cv_ap_mean": 0.45414940886227884,
+        "cv_ap_sd": 0.012616164600197391,
+        "fit_seconds": 0.08713750002789311
+      },
+      {
+        "model": "tree_depth5",
+        "family": "tree",
+        "cv_ap_mean": 0.4061944528115912,
+        "cv_ap_sd": 0.009785085444401681,
+        "fit_seconds": 0.07730091796838678
+      }
+    ],
+    "questions_10": [
+      {
+        "model": "logistic_unpenalized",
+        "family": "logistic",
+        "cv_ap_mean": 0.45444171166008146,
+        "cv_ap_sd": 0.0123777284337274,
+        "fit_seconds": 0.037037750968011096
+      },
+      {
+        "model": "l1_C0.1",
+        "family": "l1",
+        "cv_ap_mean": 0.45457080629041774,
+        "cv_ap_sd": 0.012272160760471237,
+        "fit_seconds": 0.14709816596587189
+      },
+      {
+        "model": "tree_depth5",
+        "family": "tree",
+        "cv_ap_mean": 0.40930402632686247,
+        "cv_ap_sd": 0.0063268907802297505,
+        "fit_seconds": 0.30376000099931844
+      }
+    ],
+    "questions_20": [
+      {
+        "model": "logistic_unpenalized",
+        "family": "logistic",
+        "cv_ap_mean": 0.4539773952721923,
+        "cv_ap_sd": 0.012232127800508317,
+        "fit_seconds": 0.04544854201958515
+      },
+      {
+        "model": "l1_C0.01",
+        "family": "l1",
+        "cv_ap_mean": 0.4542742721535613,
+        "cv_ap_sd": 0.011799261480447977,
+        "fit_seconds": 0.150054291007109
+      },
+      {
+        "model": "tree_depth5",
+        "family": "tree",
+        "cv_ap_mean": 0.4083543217278791,
+        "cv_ap_sd": 0.006020899873384849,
+        "fit_seconds": 0.5173271670064423
+      }
+    ],
+    "labels_0.05": [
+      {
+        "model": "logistic_unpenalized",
+        "family": "logistic",
+        "cv_ap_mean": 0.4422954006370626,
+        "cv_ap_sd": 0.015069914287521153,
+        "fit_seconds": 0.02821099999709986
+      },
+      {
+        "model": "l1_C1",
+        "family": "l1",
+        "cv_ap_mean": 0.4423122884293503,
+        "cv_ap_sd": 0.015051096692119004,
+        "fit_seconds": 0.0828462929930538
+      },
+      {
+        "model": "tree_depth5",
+        "family": "tree",
+        "cv_ap_mean": 0.4068093761673043,
+        "cv_ap_sd": 0.00882121433663828,
+        "fit_seconds": 0.08650170898181386
+      }
+    ],
+    "labels_0.10": [
+      {
+        "model": "logistic_unpenalized",
+        "family": "logistic",
+        "cv_ap_mean": 0.43472261976994425,
+        "cv_ap_sd": 0.012506098944474747,
+        "fit_seconds": 0.025941207975847647
+      },
+      {
+        "model": "l1_C1",
+        "family": "l1",
+        "cv_ap_mean": 0.4347243333188274,
+        "cv_ap_sd": 0.012499619002424444,
+        "fit_seconds": 0.08030570895061828
+      },
+      {
+        "model": "tree_depth5",
+        "family": "tree",
+        "cv_ap_mean": 0.40461025187463484,
+        "cv_ap_sd": 0.006306535428841666,
+        "fit_seconds": 0.0866912919736933
+      }
+    ],
+    "labels_0.20": [
+      {
+        "model": "logistic_unpenalized",
+        "family": "logistic",
+        "cv_ap_mean": 0.4363736382454741,
+        "cv_ap_sd": 0.009348551507903594,
+        "fit_seconds": 0.02374529099324718
+      },
+      {
+        "model": "l1_C0.01",
+        "family": "l1",
+        "cv_ap_mean": 0.43642370183087625,
+        "cv_ap_sd": 0.009232390836210358,
+        "fit_seconds": 0.06698450099793263
+      },
+      {
+        "model": "tree_depth5",
+        "family": "tree",
+        "cv_ap_mean": 0.414584726521786,
+        "cv_ap_sd": 0.005909782725106417,
+        "fit_seconds": 0.08666750002885237
+      }
+    ],
+    "combined_0.05": [
+      {
+        "model": "logistic_unpenalized",
+        "family": "logistic",
+        "cv_ap_mean": 0.4422033822079479,
+        "cv_ap_sd": 0.014455028541430126,
+        "fit_seconds": 0.03559120700811036
+      },
+      {
+        "model": "l1_C0.1",
+        "family": "l1",
+        "cv_ap_mean": 0.44229181542819,
+        "cv_ap_sd": 0.01450466085202096,
+        "fit_seconds": 0.14990937599213794
+      },
+      {
+        "model": "tree_depth5",
+        "family": "tree",
+        "cv_ap_mean": 0.4063141657391201,
+        "cv_ap_sd": 0.009124356733637148,
+        "fit_seconds": 0.2949263739865273
+      }
+    ],
+    "combined_0.10": [
+      {
+        "model": "logistic_unpenalized",
+        "family": "logistic",
+        "cv_ap_mean": 0.43476525504130326,
+        "cv_ap_sd": 0.012115056198124955,
+        "fit_seconds": 0.033619083027588204
+      },
+      {
+        "model": "l1_C0.1",
+        "family": "l1",
+        "cv_ap_mean": 0.43482573826527454,
+        "cv_ap_sd": 0.012178748215394346,
+        "fit_seconds": 0.14268762498977594
+      },
+      {
+        "model": "tree_depth5",
+        "family": "tree",
+        "cv_ap_mean": 0.40306412594553737,
+        "cv_ap_sd": 0.006169890307206409,
+        "fit_seconds": 0.29513833299279213
+      }
+    ],
+    "combined_0.20": [
+      {
+        "model": "logistic_unpenalized",
+        "family": "logistic",
+        "cv_ap_mean": 0.43580901534891564,
+        "cv_ap_sd": 0.009234102459167903,
+        "fit_seconds": 0.03109600002062507
+      },
+      {
+        "model": "l1_C0.01",
+        "family": "l1",
+        "cv_ap_mean": 0.4362839131343135,
+        "cv_ap_sd": 0.009465230618870628,
+        "fit_seconds": 0.10991312502301298
+      },
+      {
+        "model": "tree_depth5",
+        "family": "tree",
+        "cv_ap_mean": 0.4130834777621337,
+        "cv_ap_sd": 0.006643242587355981,
+        "fit_seconds": 0.29395204098545946
+      }
+    ]
+  },
+  "selection_metric": "five-fold AP on available (possibly corrupted) development labels",
+  "source_sha256": {
+    "__init__.py": "03ce27baa1ea12882ed32eeefd8db4d4cb961a9bb9545994e9fd3787c6f12265",
+    "experiment.py": "d10f080d77a8f0e3606549daf194107fe8805996d2fd302f4c850bd47e9a8abc",
+    "generator.py": "b3585546fad9013a382c337ee70e7715eb1fd8350c7f3aaa1c68686ae3a37fcc"
+  }
+}
