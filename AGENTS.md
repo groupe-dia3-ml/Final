@@ -7,8 +7,13 @@ Keep project deliverables in English and distinguish plans from measured results
 ## Build, run and verification
 
 This repository contains the specification, final report, oral defense notes and
-an evidence snapshot. It has no Python application to build. Check Markdown links,
+an evidence snapshot, and a PDF exporter. Check Markdown links,
 verify reports/evidence/SHA256.json and run `git diff --check` before commits.
+
+Install `requirements-export.txt` and run `python scripts/export_report.py` to
+regenerate `output/pdf/FINAL_REPORT.pdf`. Verify text with pypdf and render all
+pages with `pdftoppm` for visual review. For exporter edits run `ruff check scripts`,
+`ruff format --check scripts` and `mypy --ignore-missing-imports --check-untyped-defs scripts`.
 
 The companion cdc-benchmark and synthetic-data repositories contain runnable code.
 Each uses Python 3.14, `requirements-dev.txt`, `python -m src.experiment` and

@@ -9,7 +9,7 @@ and investigates whether feature selection preserves predictive performance.
 **Status:** both experimental phases are implemented and executed on the
 `feature/complete-project` working branches. All deliverables are in English.
 
-Read the [final report](reports/FINAL_REPORT.md), [oral defense notes](reports/ORAL_DEFENSE.md)
+Read the [final report](reports/FINAL_REPORT.md), [PDF version](output/pdf/FINAL_REPORT.pdf), [oral defense notes](reports/ORAL_DEFENSE.md)
 and [saved evidence](reports/evidence). The companion repositories are
 [CDC benchmark](https://github.com/groupe-dia3-ml/cdc-benchmark) and
 [synthetic study](https://github.com/groupe-dia3-ml/synthetic-data).
@@ -205,3 +205,16 @@ CDC Diabetes Health Indicators [Dataset]. (2017). UCI Machine Learning Repositor
 The year above follows the UCI citation and is not a claim about the survey year.
 UCI directs users to the original dataset for usage terms and acknowledgements;
 those terms must be retained when sharing derived data or results.
+
+## Export the report as PDF
+
+The PDF includes all report text, tables, references and the three experiment
+figures, with landscape pages for the figures. To regenerate it from Markdown:
+
+```sh
+python -m pip install -r requirements-export.txt
+python scripts/export_report.py
+```
+
+Output: `output/pdf/FINAL_REPORT.pdf`. The exporter embeds its font and preserves
+external reference links. Check the regenerated pages visually after content edits.
