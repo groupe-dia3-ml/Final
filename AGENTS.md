@@ -6,10 +6,15 @@ Keep project deliverables in English and distinguish plans from measured results
 
 ## Build, run and verification
 
-The repository currently contains documentation only. There are no build,
-training, type-check or test commands yet. Check Markdown and run
-`git diff --check` before committing documentation. When implementation is added,
-record the actual setup, execution and verification commands here.
+This repository contains the specification, final report, oral defense notes and
+an evidence snapshot. It has no Python application to build. Check Markdown links,
+verify reports/evidence/SHA256.json and run `git diff --check` before commits.
+
+The companion cdc-benchmark and synthetic-data repositories contain runnable code.
+Each uses Python 3.14, `requirements-dev.txt`, `python -m src.experiment` and
+`python scripts/execute_notebook.py`. Their own AGENTS.md files give lint/type/test
+commands. Keep report numbers synchronized with their saved results and hashes.
+The original README work plan is historical; measured findings are in the report.
 
 ## Data and evaluation constraints
 
@@ -21,6 +26,10 @@ record the actual setup, execution and verification commands here.
 - Do not equate repeated predictor profiles with duplicate participants.
 - Keep raw downloads out of version control; preserve source acknowledgements.
 - Report associations rather than causal effects or future disease onset.
+- Preserve the synthetic starter generator; measured prevalence is about 19%.
+- Synthetic coefficients are assumptions. Never use oracle probabilities as inputs.
+- Different prevalence prevents direct AP ranking across the two phases.
+- Do not claim individual team contributions without verified information.
 
 ## Contributions
 

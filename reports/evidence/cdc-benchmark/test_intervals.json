@@ -1,0 +1,35 @@
+{
+  "candidate": "enriched/gradient_boosting_leaf15",
+  "repeats": 200,
+  "method": "95% stratified percentile bootstrap; fixed fit and observed prevalence",
+  "intervals": {
+    "average_precision": [
+      0.4141466481182655,
+      0.43500925248189304
+    ],
+    "roc_auc": [
+      0.8222788719461643,
+      0.8317184186168172
+    ],
+    "brier": [
+      0.09646247222520768,
+      0.09831273524916402
+    ],
+    "precision": [
+      0.3723785506479767,
+      0.3856460751406438
+    ],
+    "recall": [
+      0.6001945112462866,
+      0.6203281935210072
+    ],
+    "f1": [
+      0.4607581818754528,
+      0.47489748842648105
+    ],
+    "accuracy": [
+      0.8032107379375591,
+      0.8101771917376221
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "source": {
+    "url": "https://archive.ics.uci.edu/static/public/891/data.csv",
+    "sha256": "9f71fda9d4ae5f4878c99b9233b6a16accfa9a17c194116a6b78100540934964",
+    "retrieved_at_utc": "2026-11-16T12:18:15.667630+00:00"
+  },
+  "rows": 253680,
+  "columns": [
+    "ID",
+    "Diabetes_binary",
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "NoDocbcCost",
+    "GenHlth",
+    "MentHlth",
+    "PhysHlth",
+    "DiffWalk",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "missing_values": 0,
+  "target_counts": {
+    "0": 218334,
+    "1": 35346
+  },
+  "development_rows": 202944,
+  "test_rows": 50736,
+  "repeated_development_predictor_profiles": 18580,
+  "duplicate_policy": "Retained: identical responses do not identify repeated participants",
+  "development_index_sha256": "88d26edb9eebc3f1f4c69a0ccc11ee832f1926853fcdf9a1b4835bbd00a829f0",
+  "test_index_sha256": "c941dafcfd11a0c2ec61498efb0dd3bf8c4a082db95e9198409cbfe0d5b5b6af"
+}

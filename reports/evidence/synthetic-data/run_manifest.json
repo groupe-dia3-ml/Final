@@ -1,0 +1,25 @@
+{
+  "completed_at_utc": "2026-11-16T12:21:33.635455+00:00",
+  "python": "3.14.10",
+  "n_samples": 50000,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "scenario_count": 12,
+  "elapsed_seconds": 30.12207425001543,
+  "source_sha256": {
+    "__init__.py": "03ce27baa1ea12882ed32eeefd8db4d4cb961a9bb9545994e9fd3787c6f12265",
+    "experiment.py": "d10f080d77a8f0e3606549daf194107fe8805996d2fd302f4c850bd47e9a8abc",
+    "generator.py": "b3585546fad9013a382c337ee70e7715eb1fd8350c7f3aaa1c68686ae3a37fcc"
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.1"
+  },
+  "generator_note": "Unchanged starter population and outcome equation; prevalence is measured, not calibrated to CDC.",
+  "uncertainty_note": "Three independent cohorts: SD across seeds is descriptive, not a 95% confidence interval."
+}
